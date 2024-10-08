@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FormDaftar</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body
+    style="
+      background-image: url('./Assets/Landing\ Page.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+    "
+  >
+    <section
+      style="
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      "
+      class="min-w-96 h-96 sm:w-[529px] sm:h-[663px] selection: border border-black border-solid bg-[rgba(24,26,28,0.84)] flex justify-between items-center flex-col rounded-[16px]"
+    >
+      <div class="mt-6 sm:mt-10 flex flex-row items-center">
+        <img
+          class="h-[19.82px] w-[24.59px] mr-1.5 sm:w-[42px] sm:h-[44px] sm:mr-2"
+          src="./Assets/BioskopLogo.jpg"
+        />
+        <h1
+          class="text-white text-[28.88px] sm:text-[50px] leading-[31.77px] sm:leading-[55px] tracking-[0.2px] m-0"
+        >
+          CHILL
+        </h1>
+      </div>
+      <div class="title-container w-auto">
+        <h3
+          class="font-bold text-[18px] sm:text-[32px] leading-[25.2px] sm:leading-[35.2px] text-center text-white sm:mt-37 mb-[4.62px] sm:mb-2.5"
+        >
+          Daftar
+        </h3>
+        <p
+          class="text-white font-normal text-[10px] sm:text-[16px] text-center tracking-[0.2px] sm:tracking-[0.2px] leading-[14px] sm:leading-[22.4px]"
+        >
+          Selamat datang!
+        </p>
+      </div>
+      <!-- Username Input -->
+      <div class="username-container flex flex-col">
+        <label
+          for="username"
+          class="text-white text-[10px] leading-[14px] tracking-[0.2px] font-medium sm:text-[18px] sm:leading-[25.2px] sm:tracking-[0.2] text-left mb-[3.47px] sm:mb-1.5"
+          >Username</label
+        >
+        <input
+          class="w-[260px] h-[28px] border-[0.58px] sm:w-[449px] sm:h-[50px] rounded-[24px] border-solid text-[10px] leading-[14px] tracking-[0.2px] sm:text-[16px] border-2 bg-transparent border-[rgba(231,227,252,0.23)] text-white pl-3 sm:pl-4"
+          type="text"
+          placeholder="Masukkan username"
+          name="username"
+          required
+        />
+      </div>
+      <!-- Password Required -->
+      <div class="username-container flex flex-col">
+        <label
+          for="username"
+          class="text-white text-[10px] leading-[14px] tracking-[0.2px] font-medium sm:text-[18px] sm:leading-[25.2px] sm:tracking-[0.2] text-left mb-[3.47px] sm:mb-1.5"
+          >Kata Sandi</label
+        >
+        <input
+          class="w-[260px] h-[28px] border-[0.58px] sm:w-[449px] sm:h-[50px] rounded-[24px] border-solid text-[10px] leading-[14px] tracking-[0.2px] sm:text-[16px] border-2 bg-transparent border-[rgba(231,227,252,0.23)] text-white pl-3 sm:pl-4"
+          type="text"
+          placeholder="Masukkan kata sandi"
+          name="username"
+          required
+        />
+      </div>
+      <!-- Password Input -->
+      <div class="password-container flex flex-col">
+        <label
+          for="password"
+          class="text-white text-[10px] leading-[14px] tracking-[0.2px] font-medium sm:text-[18px] sm:leading-[25.2px] sm:tracking-[0.2] text-left mb-[3.47px] sm:mb-1.5"
+          >Konfirmasi Kata sandi
+        </label>
+        <div class="relative">
+          <input
+            class="w-[260px] h-[28px] border-[0.58px] sm:w-[449px] sm:h-[50px] rounded-[24px] border-solid text-[10px] leading-[14px] tracking-[0.2px] sm:text-[16px] border-2 bg-transparent border-[rgba(231,227,252,0.23)] text-white pl-3 sm:pl-4"
+            type="password"
+            placeholder="Masukkan kata sandi"
+            name="password"
+            required
+          />
+          <img
+            src="./Assets/Eye.jpg"
+            class="absolute bottom-2 right-3 sm:h-5 w-3 sm:bottom-3 sm:right-5 sm:h-5 sm:w-5"
+          />
+        </div>
+        <div class="flex justify-between">
+          <p
+            class="text-[10px] leading-[14px] tracking-[0.2px] font-normal sm:text-[16px] text-[rgba(193,194,196,1)] mt-[6.39px] sm:mt-3"
+          >
+            Belum punya akun?<a class="text-white" href="./FormDaftar.html"
+              >Daftar</a
+            >
+          </p>
+          <a
+            class="text-[10px] leading-[14px] tracking-[0.2px] font-normal sm:text-[16px] text-white mt-[6.39px] sm:mt-3"
+            href="./index.html"
+            >Lupa kata sandi?</a
+          >
+        </div>
+      </div>
+      <div class="button-container mb-6">
+        <button
+          class="w-[260px] h-[28px] border-[0.58px] sm:w-[449px] font-lato text-white bg-[rgba(61,65,66,1)] sm:h-[50px] rounded-[24px] border-[rgba(231,227,252,0.23)] sm:border-[1px] border-[solid] text-[10px] leading-[14px] tracking-[0.2px] sm:text-[16px] font-semibold"
+          href="./index.html"
+          type="submit"
+        >
+          Masuk
+        </button>
+        <p
+          class="font-lato font-normal text-[10px] leading-[14px] tracking-[0.2px] sm:text-[16px] text-[rgba(193,194,196,1)] text-center mt-2 mb-1 sm::mt-2 sm:mb-2"
+        >
+          Atau
+        </p>
+        <button
+          class="w-[260px] h-[28px] border-[0.58px] text-[10px] leading-[14px] tracking-[0.2px] font-lato text-white sm:w-[449px] sm:h-[50px] rounded-[24px] flex justify-center items-center border-[rgba(231,227,252,0.23)] border-[1px] border-solid sm:text-[16px] font-semibold"
+          type="submit"
+        >
+          <img
+            class="h-[10px] w-[10px] sm:h-[18px] sm:w-[18px]"
+            src="./Assets/Google.jpg"
+          />
+          <p class="ml-5">Masuk dengan google</p>
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
